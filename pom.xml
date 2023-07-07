@@ -12,6 +12,7 @@
   <inceptionYear>2001</inceptionYear>
   <modules>
     <module>cloudalibaba-provider-payment9001</module>
+    <module>cloudalibaba-provider-payment9002</module>
   </modules>
 
   <distributionManagement>
