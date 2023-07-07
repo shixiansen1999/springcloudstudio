@@ -5,10 +5,14 @@
   <groupId>org.example</groupId>
   <artifactId>mscloud</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>Maven</name>
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
+  <modules>
+    <module>cloudalibaba-provider-payment9001</module>
+  </modules>
 
   <distributionManagement>
     <site>
@@ -33,6 +37,13 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+        <version>2.1.0.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <!--spring boot 2.2.2-->
       <dependency>
         <groupId>org.springframework.boot</groupId>
